@@ -5,7 +5,7 @@ require('dotenv').config();
 
 // Configuração da aplicação
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3339;
 
 // Middleware para processar JSON
 app.use(bodyParser.json());
@@ -27,7 +27,7 @@ const transporter = nodemailer.createTransport({
 // Rota para enviar email
 app.post('/api/send-email', async (req, res) => {
   try {
-
+    
     
     /*   const to= "fabiano.canedo@energisa.com.br"
       const subject= "Email teste via API"
